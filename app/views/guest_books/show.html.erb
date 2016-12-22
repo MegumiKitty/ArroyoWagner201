@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @guest_book.user_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @guest_book.title %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @guest_book.message %>
+</p>
+
+<%= link_to 'Edit', edit_guest_book_path(@guest_book) %> |
+<%= link_to 'Back', guest_books_path %>
